@@ -3,7 +3,7 @@ const cors = require('cors');
 const fetch = require('node-fetch');
 
 const app = express();
-app.use(cors());
+app.use(cors({ origin: '*' }));
 app.use(express.json());
 
 const SECRET_KEY = 'sk_live_oWbMWGO6Lx0LgOGYi6oLTM7F5yp4HQhb';
